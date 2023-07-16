@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/anime_image"
+            android:layout_width="120dp"
+            android:layout_height="200dp"
+            android:src="@android:drawable/ic_menu_camera"/>
+
+        <EditText
+            android:id="@+id/anime_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/anime_image"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="16dp"
+            android:hint="@string/tittle"/>
+
+        <EditText
+            android:id="@+id/release_Year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/anime_image"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="16dp"
+            android:hint="@string/ryear"/>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/anime_image"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="#009688" />
+
+        <TextView
+            android:id="@+id/thoughts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separator"
+            android:text="Thoughts"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/thoughts_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thoughts"
+            android:layout_marginTop="30dp"
+            android:hint="@string/write_your_thoughts"
+            />
+
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thoughts_content"
+            android:text="@string/rate"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:padding="20dp" />
+
+        <RatingBar
+            android:id="@+id/ratebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rate"
+            android:layout_centerHorizontal="true"
+            android:progressTint="#FFEB3B"/>
+
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Save"
+            android:textSize="20dp"
+            android:backgroundTint="#009688"
+          />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</layout>

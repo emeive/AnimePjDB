@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AnimePjDB</string>
+
+    <string name="year">Year</string>
+    <string name="description">Description</string>
+    <string name="rate">Rate</string>
+    <string name="write_your_thoughts">Write your thoughts</string>
+    <string name="tittle">Tittle</string>
+    <string name="ryear">rYear</string>
+</resources>
